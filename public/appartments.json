@@ -1,0 +1,44 @@
+[
+  {
+    "id": 68,
+    "name": "Luxary Apartment",
+    "desc": "At 250 square feet, the Standard Couple AC  with the option of a couple of bed. The simple and clean rooms here will provide you with a cable TV and a seating area. Private bathroom. Room facilities: Seating Area,AC, Fan, Shower, Toilet, Bathroom, TV, Telephone, Cable Channels.",
+    "price": "100/day",
+    "img": "https://i.ibb.co/M1DZ6Xw/property-img1.jpg"
+  },
+  {
+    "id": 987,
+    "name": "Relaxation Apartment",
+    "desc": "At 200 square feet, the Standard Couple AC  with the option of a couple of bed. The simple and clean rooms here will provide you with a cable TV and a seating area. Private bathroom. Room facilities: Seating Area,AC, Fan, Shower, Toilet, Bathroom, TV, Telephone, Cable Channels.",
+    "price": "70/day",
+    "img": "https://i.ibb.co/s600jvz/property-img2.jpg"
+  },
+  {
+    "id": 87,
+    "name": "Night valley Apartment",
+    "desc": "At 150 square feet, the Standard Couple AC  with the option of a couple of bed. The simple and clean rooms here will provide you with a cable TV and a seating area. Private bathroom. Room facilities: Seating Area,AC, Fan, Shower, Toilet, Bathroom, TV, Telephone, Cable Channels.",
+    "price": "120/day",
+    "img": "https://i.ibb.co/XW6ZpZB/property-img3.jpg"
+  },
+  {
+    "id": 759,
+    "name": "One Room Apartment",
+    "desc": "Ideal for single visitors and for couples who want extra seclusion and even more space in their bedroom and bathroom. The beach villas are set further back in our resort and they can enjoy all time.",
+    "price": "80/day",
+    "img": "https://i.ibb.co/kcDZTP4/property-img4.jpg"
+  },
+  {
+    "id": 536,
+    "name": "STANDARD COUPLE(AC)",
+    "desc": "A standard Couple AC room will generally be one bed for two people,the bed will either be a Double, Queen or King size bed if you are traveling with your wife Or friends.It is defined as a room with one round bed for two-person, usually for a couple Or friend.",
+    "price": "150/day",
+    "img": "https://i.ibb.co/Dz2BLMX/property-img5.jpg"
+  },
+  {
+    "id": 5646,
+    "name": "ROYAL SUITE (SEA VIEW AC)",
+    "desc": "Royal Club Connecting Suite room is the perfect choice of your accommodation if you are planning to stay with your family or friends. This 800 square meter room can accommodate 4 people with one king bed and twin beds along with two bathrooms. As all other rooms type, it is also equipped with all the necessary amenities like as expected by modern-day urban travelers.",
+    "price": "200/day",
+    "img": "https://i.ibb.co/Qct5fRf/property-img8.jpg"
+  }
+]

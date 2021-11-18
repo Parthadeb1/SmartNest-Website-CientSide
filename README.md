@@ -11,4 +11,4 @@
 4. Customer can book their appartment by clicking on book now button.
 5. They can Delete their appartment if they booked but didn't stay at all.
 
-Thank you!!# niche-website-client-side-Parthadeb1
+Thank you!!
