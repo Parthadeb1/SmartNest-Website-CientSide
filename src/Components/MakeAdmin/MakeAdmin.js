@@ -11,7 +11,7 @@ const MakeAdmin = () => {
   //make admin
   const handleMakeAdmin = (e) => {
     const user = { email };
-    fetch("http://localhost:5000/users/admin", {
+    fetch("https://fierce-ridge-17971.herokuapp.com/users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

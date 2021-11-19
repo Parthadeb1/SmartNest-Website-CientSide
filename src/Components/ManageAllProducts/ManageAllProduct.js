@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const ManageAllProduct = ({ service }) => {
   const { name, price, img, _id } = service;
@@ -7,7 +6,7 @@ const ManageAllProduct = ({ service }) => {
   const handleDelete = (id) => {
     const procced = window.confirm("Are you sure you want to Delete ?");
     if (procced) {
-      fetch(`http://localhost:5000/packages/${id}`, {
+      fetch(`https://fierce-ridge-17971.herokuapp.com/packages/${id}`, {
         method: "DELETE",
       })
         .then((response) => response.json())

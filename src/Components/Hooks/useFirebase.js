@@ -79,7 +79,7 @@ const useFirebase = () => {
 
   //cheak admin fetch
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${user.email}`)
+    fetch(`https://fierce-ridge-17971.herokuapp.com/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);
@@ -87,7 +87,7 @@ const useFirebase = () => {
   // Save signup user
   const saveUser = (email, profileName, method) => {
     const user = { email, profileName };
-    fetch("http://localhost:5000/users", {
+    fetch("https://fierce-ridge-17971.herokuapp.com/users", {
       method: method,
       headers: {
         "content-Type": "application/json",

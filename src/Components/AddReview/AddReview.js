@@ -8,7 +8,7 @@ const AddReview = () => {
 
   const onSubmit = (data) => {
     if (data.name) {
-      fetch("http://localhost:5000/reviews/", {
+      fetch("https://fierce-ridge-17971.herokuapp.com/reviews/", {
         method: "POST",
         headers: {
           "content-type": "application/json",

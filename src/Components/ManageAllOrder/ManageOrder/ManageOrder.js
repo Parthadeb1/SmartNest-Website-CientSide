@@ -10,7 +10,7 @@ const ManageOrder = ({ service }) => {
 
   // Handle Approved function
   const handleStatus = (id) => {
-    const url = `http://localhost:5000/manageallorder/${id}`;
+    const url = `https://fierce-ridge-17971.herokuapp.com/manageallorder/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -24,7 +24,7 @@ const ManageOrder = ({ service }) => {
   const handleDelete = (id) => {
     const procced = window.confirm("Are you sure you want to Delete ?");
     if (procced) {
-      fetch(`http://localhost:5000/manageallorder/${id}`, {
+      fetch(`https://fierce-ridge-17971.herokuapp.com/manageallorder/${id}`, {
         method: "DELETE",
       })
         .then((response) => response.json())

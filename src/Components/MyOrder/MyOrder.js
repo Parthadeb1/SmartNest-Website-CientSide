@@ -15,7 +15,7 @@ const MyOrder = () => {
     if (data.email) {
       data.product = services;
       data.status = "Pending";
-      fetch("http://localhost:5000/myorder", {
+      fetch("https://fierce-ridge-17971.herokuapp.com/myorder", {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -33,7 +33,7 @@ const MyOrder = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/packages/${packageId}`)
+    fetch(`https://fierce-ridge-17971.herokuapp.com/packages/${packageId}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

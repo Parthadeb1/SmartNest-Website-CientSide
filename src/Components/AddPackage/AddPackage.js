@@ -6,7 +6,7 @@ const AddPackage = () => {
 
   const onSubmit = (data) => {
     if (data.name) {
-      fetch("http://localhost:5000/packages/", {
+      fetch("https://fierce-ridge-17971.herokuapp.com/packages/", {
         method: "POST",
         headers: {
           "content-type": "application/json",

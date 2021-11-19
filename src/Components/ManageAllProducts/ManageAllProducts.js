@@ -5,7 +5,7 @@ const ManageAllProducts = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/packages")
+    fetch("https://fierce-ridge-17971.herokuapp.com/packages")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, [services]);

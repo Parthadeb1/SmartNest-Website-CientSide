@@ -5,7 +5,7 @@ const ManageAllOrder = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/manageallorder")
+    fetch("https://fierce-ridge-17971.herokuapp.com/manageallorder")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, [services]);

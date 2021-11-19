@@ -6,7 +6,8 @@ import { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import './ShowReviews.css';
+import PersonIcon from '@mui/icons-material/Person';
+import "./ShowReviews.css";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -20,33 +21,32 @@ function ShowReviews() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://fierce-ridge-17971.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);
 
-
-
   return (
-    <Container className='text-center my-md-5 my-3 review-container p-sm-5 mx-auto'>
+    <Container className="text-center my-md-4 my-3 review-container p-sm-5 mx-auto">
       <Box>
-        <h1 className='review-title'>What People Say!!!</h1>
-        <h4 className='review-text'>Reviews</h4>
+        <h1 className="text-dark mb-5 mt-1">"What People Say!!!"</h1>
+       
         <AutoPlaySwipeableViews
           axis={theme.direction === "rtl" ? "x-reverse" : "x"}
           index={activeStep}
           onChangeIndex={handleStepChange}
-          enableMouseEvents>
+          enableMouseEvents
+        >
           {reviews.map((review) => (
-            <div className='review-section mx-auto' key={review._id}>
-              <p>{review.desc}</p>
+            <div className="review-section mx-auto" key={review._id}>
+              <p className="text-primary fs-3">"{review.desc}"</p>
               <Rating
-                name='read-only'
-                size='medium'
+                name="read-only"
+                size="medium"
                 value={review.rating}
                 readOnly
               />
-              <p className='review-name'>{review.name}</p>
+              <p className="review-name"><PersonIcon /> {review.name}</p>
             </div>
           ))}
         </AutoPlaySwipeableViews>

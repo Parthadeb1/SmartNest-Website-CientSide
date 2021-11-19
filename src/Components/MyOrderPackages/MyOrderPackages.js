@@ -8,7 +8,7 @@ const MyOrderPackages = () => {
   const { user } = useAuth();
 
   useEffect(() => {
-    const url = `http://localhost:5000/managemyorder/${user.email}`;
+    const url = `https://fierce-ridge-17971.herokuapp.com/managemyorder/${user.email}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setMyOrder(data));

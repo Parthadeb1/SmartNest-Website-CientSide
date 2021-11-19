@@ -7,8 +7,8 @@
     font-weight: bold;
   }
   .review-container{
-    background-color: thistle;
-    border-radius: 20px;
+    background-color: rgb(240, 228, 240);
+    border-radius: 10px;
   }
   @media screen and (min-width: 668px) {
     .review-container {
