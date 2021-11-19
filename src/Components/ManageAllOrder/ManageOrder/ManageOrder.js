@@ -24,7 +24,7 @@ const ManageOrder = ({ service }) => {
   const handleDelete = (id) => {
     const procced = window.confirm("Are you sure you want to Delete ?");
     if (procced) {
-      fetch(`http://localhost:5000/manageallorder${id}`, {
+      fetch(`http://localhost:5000/manageallorder/${id}`, {
         method: "DELETE",
       })
         .then((response) => response.json())

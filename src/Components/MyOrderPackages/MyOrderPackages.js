@@ -12,7 +12,7 @@ const MyOrderPackages = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setMyOrder(data));
-  }, [myorder]);
+  }, [myorder, user.email]);
   return (
     <div>
       <h2 className="text-center">My Order</h2>

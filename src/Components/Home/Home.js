@@ -7,6 +7,7 @@ import Footer from "../Footer/Footer";
 import Services from "../Services/Services";
 import AboutUs from "../AboutUs/AboutUs";
 import ContactUs from "../ContactUs/ContactUs";
+import ShowReviews from "../ShowReview/ShowReviews";
 
 const Home = () => {
   return (
@@ -42,6 +43,7 @@ const Home = () => {
       </Carousel>
       <Services quantity={6} />
       <AboutUs />
+      <ShowReviews/>
       <ContactUs />
       <Footer />
     </div>

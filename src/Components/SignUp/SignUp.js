@@ -11,7 +11,6 @@ const SignUp = () => {
     setUser,
     handleName,
     profileName,
-    name,
     customSignUpWithEmailAndPassword,
     saveUser,
   } = useAuth();

@@ -15,7 +15,7 @@ const AddPackage = () => {
       })
         .then((res) => res.json())
         .then((data) => {
-          if (data.insertedId > 0) {
+          if (data.insertedId) {
             alert("Packages added succesfully!!");
             reset("");
           }

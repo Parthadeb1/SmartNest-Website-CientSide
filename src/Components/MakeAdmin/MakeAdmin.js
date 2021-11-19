@@ -26,25 +26,28 @@ const MakeAdmin = () => {
           setSucces(true);
         }
       });
-    setEmail("");
+    setEmail(" ");
     e.preventDefault();
   };
   return (
     <div className="text-center">
       <h1 className="text-center text-secondary mb-5">Make Admin</h1>
-      <form onSubmit={handleMakeAdmin}>
-        <TextField
-          sx={{ width: 300 }}
-          label="Email"
-          type="email"
-          onBlur={handleOnBlur}
-          variant="standard"
-        />
-        <Button sx={{ m: 2 }} type="submit" variant="contained">
-          Make Admin
-        </Button>
-      </form>
-      {success && <Alert severity="success"> Admin Made successfully!!</Alert>}
+      {!success ? (
+        <form onSubmit={handleMakeAdmin}>
+          <TextField
+            sx={{ width: 300 }}
+            label="Email"
+            type="email"
+            onBlur={handleOnBlur}
+            variant="standard"
+          />
+          <Button sx={{ m: 2 }} type="submit" variant="contained">
+            Make Admin
+          </Button>
+        </form>
+      ) : (
+        <Alert severity="success"> Admin Made successfully!!</Alert>
+      )}
     </div>
   );
 };

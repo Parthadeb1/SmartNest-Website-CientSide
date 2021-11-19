@@ -30,6 +30,7 @@ import MakeAdmin from "../MakeAdmin/MakeAdmin";
 import AddReview from "../AddReview/AddReview";
 import AddPackage from "../AddPackage/AddPackage";
 import AdminRoute from "../SignIn/AdminRoute/AdminRoute";
+import ManageAllProducts from "../ManageAllProducts/ManageAllProducts";
 
 const drawerWidth = 215;
 
@@ -78,8 +79,16 @@ function Dashboard(props) {
                 <ListItemText primary="Manage All Order" />
               </Link>
             </ListItem>
-
             <ListItem button key={7}>
+              <ListItemIcon>
+                <ShoppingCartIcon />
+              </ListItemIcon>
+              <Link to={`${url}/manageallproducts`}>
+                <ListItemText primary="Manage All Products" />
+              </Link>
+            </ListItem>
+
+            <ListItem button key={8}>
               <ListItemIcon>
                 <AddIcon />
               </ListItemIcon>
@@ -252,6 +261,9 @@ function Dashboard(props) {
           </Route>
           <AdminRoute path={`${path}/manageAllOrders`}>
             <ManageAllOrder />
+          </AdminRoute>
+          <AdminRoute path={`${path}/manageallproducts`}>
+            <ManageAllProducts />
           </AdminRoute>
           <AdminRoute path={`${path}/addpackage`}>
             <AddPackage />
