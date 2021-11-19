@@ -1,6 +1,6 @@
 # Getting Started with Smart-Nest React App
 
-# live-site-link: 
+# live-site-link: https://smart-nest-56309.web.app/
 
 
 **About Site
